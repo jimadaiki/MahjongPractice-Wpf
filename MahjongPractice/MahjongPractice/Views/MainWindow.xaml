@@ -3,10 +3,36 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:views="clr-namespace:MahjongPractice"
+        xmlns:views="clr-namespace:MahjongPractice.Views"
+        xmlns:viewModels="clr-namespace:MahjongPractice.ViewModels"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" Background="{StaticResource MahjongMatColor}">
+    <Window.Resources>
+        <viewModels:MainWindowViewModel x:Key="ViewModel"/>
+    </Window.Resources>
+
+    <Window.DataContext>
+        <StaticResource ResourceKey="ViewModel"/>
+    </Window.DataContext>
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <ListBox x:Name="itemsControl" Grid.Row="2" ItemsSource="{Binding Tehai}"
+                 Background="{StaticResource MahjongMatColor}" BorderThickness="0">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Image Source="/Resources/Manzu1.gif"/>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ListBox>
         
     </Grid>
 </Window>

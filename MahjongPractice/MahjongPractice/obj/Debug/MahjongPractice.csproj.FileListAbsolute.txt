@@ -14,3 +14,14 @@ C:\Users\jimad\Desktop\プログラミング\MahjongPractice\MahjongPractice\Mah
 C:\Users\jimad\Desktop\プログラミング\MahjongPractice\MahjongPractice\MahjongPractice\obj\Debug\MahjongPractice.csproj.CoreCompileInputs.cache
 C:\Users\jimad\Desktop\プログラミング\MahjongPractice\MahjongPractice\MahjongPractice\obj\Debug\MahjongPractice.exe
 C:\Users\jimad\Desktop\プログラミング\MahjongPractice\MahjongPractice\MahjongPractice\obj\Debug\MahjongPractice.pdb
+C:\Users\jimad\Desktop\プログラミング\MahjongPractice\MahjongPractice\MahjongPractice\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\jimad\Desktop\プログラミング\MahjongPractice\MahjongPractice\MahjongPractice\bin\Debug\Prism.dll
+C:\Users\jimad\Desktop\プログラミング\MahjongPractice\MahjongPractice\MahjongPractice\bin\Debug\Prism.Wpf.dll
+C:\Users\jimad\Desktop\プログラミング\MahjongPractice\MahjongPractice\MahjongPractice\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\jimad\Desktop\プログラミング\MahjongPractice\MahjongPractice\MahjongPractice\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\jimad\Desktop\プログラミング\MahjongPractice\MahjongPractice\MahjongPractice\bin\Debug\Prism.pdb
+C:\Users\jimad\Desktop\プログラミング\MahjongPractice\MahjongPractice\MahjongPractice\bin\Debug\Prism.xml
+C:\Users\jimad\Desktop\プログラミング\MahjongPractice\MahjongPractice\MahjongPractice\bin\Debug\Prism.Wpf.pdb
+C:\Users\jimad\Desktop\プログラミング\MahjongPractice\MahjongPractice\MahjongPractice\bin\Debug\Prism.Wpf.xml
+C:\Users\jimad\Desktop\プログラミング\MahjongPractice\MahjongPractice\MahjongPractice\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\jimad\Desktop\プログラミング\MahjongPractice\MahjongPractice\MahjongPractice\obj\Debug\MahjongPractice.csproj.CopyComplete

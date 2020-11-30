@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Linq;
+using System.Windows;
 
 namespace MahjongPractice.Views
 {
@@ -10,6 +11,7 @@ namespace MahjongPractice.Views
         public MainWindow()
         {
             InitializeComponent();
+            itemsControl.ItemsSource = Enumerable.Range(1, 13);
         }
     }
 }

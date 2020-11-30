@@ -35,7 +35,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Xaml.Behaviors, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Xaml.Behaviors.Wpf.1.1.19\lib\net45\Microsoft.Xaml.Behaviors.dll</HintPath>
+    </Reference>
+    <Reference Include="Prism, Version=8.0.0.1909, Culture=neutral, PublicKeyToken=40ee6c3a2184dc59, processorArchitecture=MSIL">
+      <HintPath>..\packages\Prism.Core.8.0.0.1909\lib\net47\Prism.dll</HintPath>
+    </Reference>
+    <Reference Include="Prism.Wpf, Version=8.0.0.1909, Culture=neutral, PublicKeyToken=40ee6c3a2184dc59, processorArchitecture=MSIL">
+      <HintPath>..\packages\Prism.Wpf.8.0.0.1909\lib\net48\Prism.Wpf.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -63,6 +73,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Models\Player.cs" />
+    <Compile Include="Models\Tile.cs" />
+    <Compile Include="Models\TileList.cs" />
+    <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -86,6 +100,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -94,9 +109,48 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Models\" />
-    <Folder Include="ViewModels\" />
+    <Resource Include="Resources\Manzu1.gif" />
+    <Resource Include="Resources\Manzu2.gif" />
+    <Resource Include="Resources\Manzu3.gif" />
+    <Resource Include="Resources\Manzu4.gif" />
+    <Resource Include="Resources\Manzu5.gif" />
+    <Resource Include="Resources\Manzu6.gif" />
+    <Resource Include="Resources\Manzu7.gif" />
+    <Resource Include="Resources\Manzu8.gif" />
+    <Resource Include="Resources\Manzu9.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Pinzu1.gif" />
+    <Resource Include="Resources\Pinzu2.gif" />
+    <Resource Include="Resources\Pinzu3.gif" />
+    <Resource Include="Resources\Pinzu4.gif" />
+    <Resource Include="Resources\Pinzu5.gif" />
+    <Resource Include="Resources\Pinzu6.gif" />
+    <Resource Include="Resources\Pinzu7.gif" />
+    <Resource Include="Resources\Pinzu8.gif" />
+    <Resource Include="Resources\Pinzu9.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Souzu1.gif" />
+    <Resource Include="Resources\Souzu2.gif" />
+    <Resource Include="Resources\Souzu3.gif" />
+    <Resource Include="Resources\Souzu4.gif" />
+    <Resource Include="Resources\Souzu5.gif" />
+    <Resource Include="Resources\Souzu6.gif" />
+    <Resource Include="Resources\Souzu7.gif" />
+    <Resource Include="Resources\Souzu8.gif" />
+    <Resource Include="Resources\Souzu9.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Jihai1.gif" />
+    <Resource Include="Resources\Jihai2.gif" />
+    <Resource Include="Resources\Jihai3.gif" />
+    <Resource Include="Resources\Jihai4.gif" />
+    <Resource Include="Resources\Jihai5.gif" />
+    <Resource Include="Resources\Jihai6.gif" />
+    <Resource Include="Resources\Jihai7.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
