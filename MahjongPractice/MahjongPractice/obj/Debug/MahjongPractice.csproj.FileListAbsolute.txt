@@ -1,0 +1,16 @@
+C:\Users\jimad\Desktop\プログラミング\MahjongPractice\MahjongPractice\MahjongPractice\bin\Debug\MahjongPractice.exe.config
+C:\Users\jimad\Desktop\プログラミング\MahjongPractice\MahjongPractice\MahjongPractice\bin\Debug\MahjongPractice.exe
+C:\Users\jimad\Desktop\プログラミング\MahjongPractice\MahjongPractice\MahjongPractice\bin\Debug\MahjongPractice.pdb
+C:\Users\jimad\Desktop\プログラミング\MahjongPractice\MahjongPractice\MahjongPractice\obj\Debug\MahjongPractice.csprojAssemblyReference.cache
+C:\Users\jimad\Desktop\プログラミング\MahjongPractice\MahjongPractice\MahjongPractice\obj\Debug\Views\MainWindow.g.cs
+C:\Users\jimad\Desktop\プログラミング\MahjongPractice\MahjongPractice\MahjongPractice\obj\Debug\App.g.cs
+C:\Users\jimad\Desktop\プログラミング\MahjongPractice\MahjongPractice\MahjongPractice\obj\Debug\MahjongPractice_MarkupCompile.cache
+C:\Users\jimad\Desktop\プログラミング\MahjongPractice\MahjongPractice\MahjongPractice\obj\Debug\MahjongPractice_MarkupCompile.lref
+C:\Users\jimad\Desktop\プログラミング\MahjongPractice\MahjongPractice\MahjongPractice\obj\Debug\App.baml
+C:\Users\jimad\Desktop\プログラミング\MahjongPractice\MahjongPractice\MahjongPractice\obj\Debug\Views\MainWindow.baml
+C:\Users\jimad\Desktop\プログラミング\MahjongPractice\MahjongPractice\MahjongPractice\obj\Debug\MahjongPractice.g.resources
+C:\Users\jimad\Desktop\プログラミング\MahjongPractice\MahjongPractice\MahjongPractice\obj\Debug\MahjongPractice.Properties.Resources.resources
+C:\Users\jimad\Desktop\プログラミング\MahjongPractice\MahjongPractice\MahjongPractice\obj\Debug\MahjongPractice.csproj.GenerateResource.cache
+C:\Users\jimad\Desktop\プログラミング\MahjongPractice\MahjongPractice\MahjongPractice\obj\Debug\MahjongPractice.csproj.CoreCompileInputs.cache
+C:\Users\jimad\Desktop\プログラミング\MahjongPractice\MahjongPractice\MahjongPractice\obj\Debug\MahjongPractice.exe
+C:\Users\jimad\Desktop\プログラミング\MahjongPractice\MahjongPractice\MahjongPractice\obj\Debug\MahjongPractice.pdb
