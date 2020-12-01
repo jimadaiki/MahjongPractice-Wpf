@@ -5,10 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:views="clr-namespace:MahjongPractice.Views"
         xmlns:viewModels="clr-namespace:MahjongPractice.ViewModels"
+        xmlns:converters="clr-namespace:MahjongPractice.Converters"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" Background="{StaticResource MahjongMatColor}">
     <Window.Resources>
         <viewModels:MainWindowViewModel x:Key="ViewModel"/>
+        <converters:TileTypesAndNumberToImageSourceConverter x:Key="TileTypesAndNumberToImageSourceConverter"/>
     </Window.Resources>
 
     <Window.DataContext>
@@ -29,10 +31,20 @@
             </ItemsControl.ItemsPanel>
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
-                    <Image Source="/Resources/Manzu1.gif"/>
+                    <!--<Image Source="/Resources/Pinzu2.gif"/>-->
+                    <Image>
+                        <Image.Source>
+                            <MultiBinding Converter="{StaticResource TileTypesAndNumberToImageSourceConverter}">
+                                <Binding Path="TileType"/>
+                                <Binding Path="Number"/>
+                            </MultiBinding>
+                        </Image.Source>
+                    </Image>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
         </ListBox>
-        
+        <Button Content="Shuffle" HorizontalAlignment="Left" Margin="669,61,0,0" VerticalAlignment="Top" Width="75"
+                Click="OnShuffleButtonClicked"/>
+
     </Grid>
 </Window>

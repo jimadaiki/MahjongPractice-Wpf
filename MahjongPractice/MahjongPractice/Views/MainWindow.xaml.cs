@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using MahjongPractice.ViewModels;
+using System.Linq;
 using System.Windows;
 
 namespace MahjongPractice.Views
@@ -8,10 +9,16 @@ namespace MahjongPractice.Views
     /// </summary>
     public partial class MainWindow : Window
     {
+        MainWindowViewModel mainWindowViewModel;
         public MainWindow()
         {
             InitializeComponent();
-            itemsControl.ItemsSource = Enumerable.Range(1, 13);
+            mainWindowViewModel = (MainWindowViewModel)DataContext;
+        }
+
+        void OnShuffleButtonClicked(object sender, RoutedEventArgs e)
+        {
+            DataContext = new MainWindowViewModel();
         }
     }
 }

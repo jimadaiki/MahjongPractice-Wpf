@@ -12,7 +12,9 @@ namespace MahjongPractice.ViewModels
     {
         public Player Player { get; set; } = new Player();
 
-        public TileList Tehai { get; set; } = null;
+        public IEnumerable<Tile> Tehai { get; set; } = null;
+
+        public TileList Mountain { get; set; } = null;
 
         public MainWindowViewModel()
         {

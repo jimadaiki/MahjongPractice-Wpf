@@ -22,5 +22,6 @@ namespace MahjongPractice.Models
         public TileTypes TileType { get; set; } = TileTypes.Manzu;
 
         public int Number { get; set; } = 0;
+
     }
 }

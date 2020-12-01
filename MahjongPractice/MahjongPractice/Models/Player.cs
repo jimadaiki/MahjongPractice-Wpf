@@ -11,11 +11,11 @@ namespace MahjongPractice.Models
         /// <summary>
         /// 手配
         /// </summary>
-        public TileList MyTiles { get; set; } = new TileList();
+        public IEnumerable<Tile> MyTiles { get; set; } = null;
 
         public Player()
         {
-            
+            MyTiles = TileList.Instance.GetRandomTiles(13);
         }
     }
 }
