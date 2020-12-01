@@ -18,7 +18,8 @@ namespace MahjongPractice.ViewModels
 
         public MainWindowViewModel()
         {
-            Tehai = Player.MyTiles;
+            Tehai = Player.MyTiles.OrderBy(tile => tile.TileType).ThenBy(tile => tile.Number);
+            
         }
     }
 }

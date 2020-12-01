@@ -24,27 +24,39 @@ namespace MahjongPractice.Models
 
         void InitTiles()
         {
+            // 数牌一種類の枚数
+            const int suhaiCount = 36;
+            // 字牌の枚数
+            const int jihaiCount = 28;
+            // 数牌の最大数字
+            const int suhaiMaxNumber = 9;
+            // 字牌の最大数字
+            const int jihaiMaxNumber = 7;
+
+            int GetSuhaiNumber(int value) => value % suhaiMaxNumber == 0 ? suhaiMaxNumber : value % suhaiMaxNumber;
+            int GetJihaiNumber(int value) => value % jihaiMaxNumber == 0 ? jihaiMaxNumber : value % jihaiMaxNumber;
+
             // すべての牌を作成
-            var manzuTiles = Enumerable.Range(1, 36)
-                                       .Select(value => new Tile { 
-                                            TileType = TileTypes.Manzu, 
-                                            Number = value % 9 == 0 ? 9 : value % 9
-                                        });
+            var manzuTiles = Enumerable.Range(1, suhaiCount)
+                                       .Select(value => new Tile {
+                                           TileType = TileTypes.Manzu,
+                                           Number = GetSuhaiNumber(value)
+                                       });
             
-            var pinzuTiles = Enumerable.Range(1, 36)
+            var pinzuTiles = Enumerable.Range(1, suhaiCount)
                                        .Select(value => new Tile {
                                            TileType = TileTypes.Pinzu,
-                                           Number = value % 9 == 0 ? 9 : value % 9
+                                           Number = GetSuhaiNumber(value)
                                        });
-            var sounuTiles = Enumerable.Range(1, 36)
+            var sounuTiles = Enumerable.Range(1, suhaiCount)
                                        .Select(value => new Tile {
                                            TileType = TileTypes.Souzu,
-                                           Number = value % 9 == 0 ? 9 : value % 9
+                                           Number = GetSuhaiNumber(value)
                                        });
-            var jihaiTiles = Enumerable.Range(1, 28)
+            var jihaiTiles = Enumerable.Range(1, jihaiCount)
                                        .Select(value => new Tile {
                                            TileType = TileTypes.Jihai,
-                                           Number = value % 7 == 0 ? 7 : value % 7
+                                           Number = GetJihaiNumber(value)
                                        });
             tiles.AddRange(manzuTiles);
             tiles.AddRange(pinzuTiles);
