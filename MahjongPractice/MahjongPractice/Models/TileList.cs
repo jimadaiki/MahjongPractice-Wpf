@@ -17,11 +17,16 @@ namespace MahjongPractice.Models
 
         IEnumerable<int> numbers = Enumerable.Range(0, 136).Select(value => value);
 
+        int index = 0;
+
         TileList() 
         {
             InitTiles();
         }    
 
+        /// <summary>
+        /// 牌の初期化を行うメソッド
+        /// </summary>
         void InitTiles()
         {
             // 数牌一種類の枚数
@@ -67,16 +72,18 @@ namespace MahjongPractice.Models
         public IEnumerable<Tile> GetRandomTiles(int count)
         {
             numbers = numbers.Shuffle();
-            return numbers.Take(count).Select(index => GetTile(index));
+            this.index += count;
+            return numbers.Take(count).Select(index => tiles[index]);
         }
 
-        public Tile this[int index] => GetTile(index);
+        public Tile this[int index] => tiles[index];
 
         public void newInstance() => tileList = new TileList();
 
-        Tile GetTile(int index)
+        public Tile GetTile()
         {
-            return tiles[index];
+            var tileIndex = numbers.ElementAt(index++);
+            return tiles[tileIndex];
         }
 
         public IEnumerator<Tile> GetEnumerator() => tiles.GetEnumerator();

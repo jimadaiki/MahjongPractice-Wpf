@@ -17,7 +17,7 @@ namespace MahjongPractice.Models
     /// <summary>
     /// 麻雀牌を表すクラス
     /// </summary>
-    class Tile
+    public class Tile
     {
         public TileTypes TileType { get; set; } = TileTypes.Manzu;
 

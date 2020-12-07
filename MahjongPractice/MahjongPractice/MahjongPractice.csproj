@@ -76,6 +76,7 @@
     <Compile Include="Converters\TileToImageSourceConverter.cs" />
     <Compile Include="Converters\TileTypesAndNumberToImageSourceConverter.cs" />
     <Compile Include="Helper\Extenstions.cs" />
+    <Compile Include="Models\MyTileList.cs" />
     <Compile Include="Models\Player.cs" />
     <Compile Include="Models\Tile.cs" />
     <Compile Include="Models\TileList.cs" />
