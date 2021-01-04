@@ -6,7 +6,7 @@ WPF練習用に作成する麻雀練習アプリです。<br>
 OS: Windows10 <br>
 .NET Version: .NET Framework4.8<br>
 IDE: Visual Studio 2019<br>
-Language, UIFramework: C# / WPF<br>
+Language / UIFramework: C# / WPF<br>
 <h2>アプリケーション、コードに関して</h2>
 公開しているアプリケーション、コードに関しては自由に使っていただいて構いません。<br>
 C# / WPF 有識者の方はぜひともアドバイス等を頂けると幸いです。<br>
